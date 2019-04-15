@@ -2,7 +2,7 @@ package com.example.demo.response;
 
 import java.util.StringJoiner;
 
-public class User {
+public class UserResponse {
 
     private Long id;
     private String name;
@@ -43,7 +43,7 @@ public class User {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", UserResponse.class.getSimpleName() + "[", "]")
                 .add("id=" + id)
                 .add("name='" + name + "'")
                 .add("sex=" + sex)
